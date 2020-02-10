@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{ICustomer} from '../shared/interfaces'
+
+
 @Component({
   selector: 'app-customer',
   templateUrl: './customer.component.html',
@@ -9,7 +11,13 @@ export class CustomerComponent implements OnInit {
 
   title: string;
   people: ICustomer[];
+  isVisibility = true;
   constructor() { }
+
+  onload()
+  {
+    this.isVisibility = false;
+  }
 
   ngOnInit() {
     this.title = 'Customers  Details';

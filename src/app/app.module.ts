@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerModule } from './customer/app.customer.module';
-
+import { sharedModule   } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { CustomerModule } from './customer/app.customer.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CustomerModule   
+    CustomerModule ,
+    sharedModule  
 
   ],
   providers: [],

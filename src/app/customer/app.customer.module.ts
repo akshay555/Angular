@@ -4,9 +4,9 @@ import { CustomerlistComponent } from './customerlist/customerlist.component';
 
 import { CustomerComponent }  from './customer.component';
 import { CustomerFilterComponent }  from './filter.component';
-
+import { sharedModule   } from '../shared/shared.module';
 @NgModule({
-  imports:      [ CommonModule ],
+  imports:      [ CommonModule ,sharedModule],
   declarations: [ CustomerComponent ,CustomerlistComponent,CustomerFilterComponent],
   exports: [ CustomerComponent ]
 })
